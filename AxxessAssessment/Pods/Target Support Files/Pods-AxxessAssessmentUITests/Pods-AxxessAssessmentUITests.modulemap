@@ -1,0 +1,6 @@
+framework module Pods_AxxessAssessmentUITests {
+  umbrella header "Pods-AxxessAssessmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
