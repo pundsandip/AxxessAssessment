@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -97,8 +97,53 @@
 				CDE92D88B55DAD9DA3FFB6F9 /* Pods-AxxessAssessmentUITests.debug.xcconfig */,
 				C8372CA0EBF2FAC42C9E831F /* Pods-AxxessAssessmentUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		37DDECC124CDA509008083B8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		37DDECC224CDA509008083B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				37EC78C124CCA48A00AF73E3 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		37DDECC324CDA509008083B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		37DDECC424CDA509008083B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37DDECC524CDA509008083B8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		37DDECC624CDA550008083B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				37EC78C624CCA48C00AF73E3 /* Assets.xcassets */,
+				37EC78C824CCA48C00AF73E3 /* LaunchScreen.storyboard */,
+				37EC78CB24CCA48C00AF73E3 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		37EC78B324CCA48A00AF73E3 = {
@@ -126,11 +171,13 @@
 		37EC78BE24CCA48A00AF73E3 /* AxxessAssessment */ = {
 			isa = PBXGroup;
 			children = (
+				37DDECC624CDA550008083B8 /* Resources */,
+				37DDECC224CDA509008083B8 /* Controllers */,
+				37DDECC324CDA509008083B8 /* Models */,
+				37DDECC524CDA509008083B8 /* Protocols */,
+				37DDECC124CDA509008083B8 /* ViewModels */,
+				37DDECC424CDA509008083B8 /* Views */,
 				37EC78BF24CCA48A00AF73E3 /* AppDelegate.swift */,
-				37EC78C124CCA48A00AF73E3 /* ViewController.swift */,
-				37EC78C624CCA48C00AF73E3 /* Assets.xcassets */,
-				37EC78C824CCA48C00AF73E3 /* LaunchScreen.storyboard */,
-				37EC78CB24CCA48C00AF73E3 /* Info.plist */,
 			);
 			path = AxxessAssessment;
 			sourceTree = "<group>";
