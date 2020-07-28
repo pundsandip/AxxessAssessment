@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
     var dataViewModel: DataViewModel?
     
     var tableView: UITableView!

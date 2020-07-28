@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+
 class DataViewModel {
     var dataModel: [DataModel] = []
     var imageDataModel: [DataModel] = []
@@ -26,11 +27,9 @@ class DataViewModel {
     }
     
     private func sortDataByType() {
-       imageDataModel =  dataModel.filter { $0.type == DataType.image.rawValue }
        textDataModel =  dataModel.filter { $0.type == DataType.text.rawValue }
-       sortedDataModel.append(imageDataModel)
+       imageDataModel =  dataModel.filter { $0.type == DataType.image.rawValue }
        sortedDataModel.append(textDataModel)
+       sortedDataModel.append(imageDataModel)
     }
-    
-   
 }

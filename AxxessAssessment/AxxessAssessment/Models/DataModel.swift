@@ -7,10 +7,11 @@
 //
 
 import Foundation
+import RealmSwift
 
 struct DataModel: Codable {
-    let id: String?
-    let type: String?
-    let date: String?
-    let data: String?
+   dynamic let id: String?
+   dynamic let type: String?
+    dynamic let date: String?
+   dynamic let data: String?
 }

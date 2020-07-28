@@ -26,10 +26,8 @@ class ImageCell: UITableViewCell {
     // MARK: Custome methods
     private func addViews() {
         lblId = UILabel(frame: .zero)
-//        lblId.backgroundColor = .green
         self.contentView.addSubview(lblId)
         lblDate = UILabel(frame: .zero)
-//        lblDate.backgroundColor = .yellow
         self.contentView.addSubview(lblDate)
         imgView = UIImageView(frame: .zero)
         imgView.image = UIImage(named: "placeholder")
@@ -62,17 +60,8 @@ class ImageCell: UITableViewCell {
     
     func setData(_ model: DataModel) {
         self.dataModel = model
-        // option check 
-        guard let id = model.id, let date = model.date, let data = model.data else { return }
-        lblId.text = id
-        lblDate.text = date
-        ServiceManager.sharedInstance.downloadImage(id: id, url: data) { response, error in
-            if let image = response {
-                DispatchQueue.main.async {
-                    self.imgView.image = image
-                }
-            }
-        }
+        lblId.text = model.id
+        lblDate.text = model.date
     }
     
     required init?(coder aDecoder: NSCoder) {
